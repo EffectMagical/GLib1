@@ -210,9 +210,10 @@ class SortingFragment : Fragment() {
             binding.backBtnGenre.visibility = View.VISIBLE
             binding.genreNameText.text = it
             binding.genreNameText.visibility = View.VISIBLE
+            namesWindow(false)
 
 
-            binding.sortingList.layoutManager = GridLayoutManager(context, 2)
+//            binding.sortingList.layoutManager = GridLayoutManager(context, 2)
         }
     }
 }

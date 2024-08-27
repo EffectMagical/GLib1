@@ -43,10 +43,6 @@ class ProfileFragment : Fragment() {
             Navigation.findNavController(binding.root).navigate(R.id.myCommentsFragment)
         }
 
-        binding.editButton.setOnClickListener{
-            Navigation.findNavController(binding.root).navigate(R.id.editFragment)
-        }
-
         binding.logOutBtn.setOnClickListener{
             val sh = requireActivity().getSharedPreferences("MySharedPref", Context.MODE_PRIVATE)
             val myEdit = sh.edit()

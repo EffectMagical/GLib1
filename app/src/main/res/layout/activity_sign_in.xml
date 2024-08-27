@@ -16,18 +16,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/elM"
+        app:layout_constraintBottom_toTopOf="@id/login"
         android:textSize="22sp"
         android:textColor="@color/black"
         android:layout_marginTop="160dp"/>
 
     <TextView
-        android:id="@+id/elM"
+        android:id="@+id/login"
         android:layout_marginTop="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/just_grey"
-        android:text="Электронная почта"
+        android:text="Логин"
         app:layout_constraintEnd_toEndOf="@+id/edit_text_email"
         app:layout_constraintStart_toStartOf="@+id/edit_text_email"
         app:layout_constraintTop_toBottomOf="@+id/textIn"
@@ -40,7 +40,7 @@
         android:layout_height="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/elM"
+        app:layout_constraintTop_toBottomOf="@+id/login"
         android:layout_marginTop="10dp"
         android:background="@drawable/sign_edit_text_style"
         android:paddingStart="10dp"
@@ -75,26 +75,15 @@
         android:id="@+id/in_btn"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_sign_color"
         android:text="Войти"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        android:layout_marginTop="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edit_text_password"
-        android:background="@drawable/btn_sign_color"/>
-
-    <TextView
-        android:id="@+id/sign_up_click_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Зарегистрироваться"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/edit_text_password"
-        app:layout_constraintStart_toStartOf="@+id/edit_text_password"
-        app:layout_constraintTop_toBottomOf="@+id/in_btn"
-        app:layout_constraintVertical_bias="0"
-        android:textColor="@color/text_blue"
-        android:layout_marginTop="5dp"/>
+        app:layout_constraintVertical_bias="0"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

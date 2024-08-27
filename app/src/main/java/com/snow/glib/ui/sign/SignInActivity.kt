@@ -21,8 +21,6 @@ class SignInActivity : AppCompatActivity() {
 
         email = findViewById(R.id.edit_text_email)
         password = findViewById(R.id.edit_text_password)
-
-        val signUpBtn: TextView = findViewById(R.id.sign_up_click_text)
         val signInBtn: Button = findViewById(R.id.in_btn)
 
 
@@ -32,11 +30,6 @@ class SignInActivity : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
-        }
-
-        signUpBtn.setOnClickListener {
-            val intent = Intent(this, SignUpActivity::class.java)
-            startActivity(intent)
         }
     }
 

@@ -43,18 +43,13 @@ android {
 
 dependencies {
 
-    // okhttp3
-    // https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp
-    implementation("com.squareup.okhttp3:okhttp:4.12.0")
-    implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
-
     //firebase
     implementation("com.google.firebase:firebase-firestore:18.1.0")
     implementation(platform("com.google.firebase:firebase-bom:33.1.2"))
     implementation("com.google.firebase:firebase-analytics")
     //load image
     implementation("io.coil-kt:coil:2.2.2")
-    // something about design? I don`t remember
+
     implementation(libs.material.v161)
     //navigation
     implementation(libs.androidx.navigation.fragment.ktx)
