@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.snow.glib.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_sortingFragment"
+            app:destination="@id/sortingFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_readingFragment"
+            app:destination="@id/readingFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_booksInfoFragment"
+            app:destination="@id/booksInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sortingFragment"
+        android:name="com.snow.glib.ui.sorting.SortingFragment"
+        android:label="fragment_sorting"
+        tools:layout="@layout/fragment_sorting" >
+        <action
+            android:id="@+id/action_sortingFragment_to_booksInfoFragment"
+            app:destination="@id/booksInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/readingFragment"
+        android:name="com.snow.glib.ui.reading.ReadingFragment"
+        android:label="fragment_reading"
+        tools:layout="@layout/fragment_reading" >
+        <action
+            android:id="@+id/action_readingFragment_to_booksInfoFragment"
+            app:destination="@id/booksInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.snow.glib.ui.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_favouriteFragment"
+            app:destination="@id/favouriteFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_bookingFragment"
+            app:destination="@id/bookingFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_hasReadFragment"
+            app:destination="@id/hasReadFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_myCommentsFragment"
+            app:destination="@id/myCommentsFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_callAdminFragment"
+            app:destination="@id/callAdminFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_editFragment"
+            app:destination="@id/editFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favouriteFragment"
+        android:name="com.snow.glib.ui.profile.favourite.FavouriteFragment"
+        android:label="fragment_favourite"
+        tools:layout="@layout/fragment_favourite" >
+        <action
+            android:id="@+id/action_favouriteFragment_to_booksInfoFragment"
+            app:destination="@id/booksInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookingFragment"
+        android:name="com.snow.glib.ui.profile.booking.BookingFragment"
+        android:label="fragment_booking"
+        tools:layout="@layout/fragment_booking" >
+        <action
+            android:id="@+id/action_bookingFragment_to_booksInfoFragment"
+            app:destination="@id/booksInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hasReadFragment"
+        android:name="com.snow.glib.ui.profile.hasread.HasReadFragment"
+        android:label="fragment_has_read"
+        tools:layout="@layout/fragment_has_read" >
+        <action
+            android:id="@+id/action_hasReadFragment_to_booksInfoFragment"
+            app:destination="@id/booksInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/callAdminFragment"
+        android:name="com.snow.glib.ui.profile.call_admin.CallAdminFragment"
+        android:label="fragment_call_admin"
+        tools:layout="@layout/fragment_call_admin" />
+    <fragment
+        android:id="@+id/myCommentsFragment"
+        android:name="com.snow.glib.ui.profile.my_comments.MyCommentsFragment"
+        android:label="fragment_my_comments"
+        tools:layout="@layout/fragment_my_comments" />
+    <fragment
+        android:id="@+id/booksInfoFragment"
+        android:name="com.snow.glib.ui.books_info.BooksInfoFragment"
+        android:label="fragment_books_info"
+        tools:layout="@layout/fragment_books_info" >
+        <action
+            android:id="@+id/action_booksInfoFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_booksInfoFragment_to_sortingFragment"
+            app:destination="@id/sortingFragment" />
+        <action
+            android:id="@+id/action_booksInfoFragment_to_favouriteFragment"
+            app:destination="@id/favouriteFragment" />
+        <action
+            android:id="@+id/action_booksInfoFragment_to_bookingFragment"
+            app:destination="@id/bookingFragment" />
+        <action
+            android:id="@+id/action_booksInfoFragment_to_hasReadFragment"
+            app:destination="@id/hasReadFragment" />
+        <action
+            android:id="@+id/action_booksInfoFragment_to_readingFragment"
+            app:destination="@id/readingFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/editActivity"
+        android:name="com.snow.glib.ui.profile.EditActivity"
+        android:label="activity_edit"
+        tools:layout="@layout/activity_edit" />
+    <fragment
+        android:id="@+id/editFragment"
+        android:name="com.snow.glib.ui.profile.edit.EditFragment"
+        android:label="fragment_edit"
+        tools:layout="@layout/fragment_edit" >
+        <action
+            android:id="@+id/action_editFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+</navigation>
